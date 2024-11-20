@@ -1,0 +1,184 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  height: 100vh;
+}
+
+header {
+  background-color: #333;
+  padding: 10px 0;
+  color: white;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a:hover {
+  color: #333;
+  background-color: white;
+  padding: 5px;
+  border-radius: 8px;
+  transition: all ease 0.4s;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.fabout {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  bottom: 0;
+  width: 100%;
+  margin: 50vh auto;
+}
+
+.fcontact {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  bottom: 0;
+  width: 100%;
+  margin: 30vh auto;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 10px;
+  width: 75%;
+  margin-left: 12.5%;
+}
+
+p a{
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  margin-bottom: 50px;
+  margin: 0 auto;
+  max-width: 1224px;
+}
+
+figure {
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  transition: all ease 0.3s;
+}
+
+figure:hover {
+  transform: scale(1.2);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px auto;
+}
+
+figcaption {
+  margin-top: 10px;
+  font-size: 1.1em;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  margin: 10px 0 5px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #555;
+  border: none;
+}
+
+@media screen and (min-width:320px) and (max-width:425px) {
+  img {
+    max-width: 80%;
+  }
+  figure {
+    transition: all ease 0.3s;
+  }
+  figure:hover {
+    transform: scale(1.1);
+  }
+  p{
+    font-size: 16px;
+  }
+  footer{
+    width: 100%;
+  }
+  header{
+    width: 100%;
+  }
+}
